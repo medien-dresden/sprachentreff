@@ -13,7 +13,7 @@
      or place appropriate <link .../> etc in favicon.html partial -->
 {{ partial "favicon.html" . }}
 
-<title>{{ .Title }}</title>
+<title>{{ if not .IsHome }}Sprachentreff - {{ .Title }}{{ else }}{{ .Site.Title }}{{ end }}</title>
 
 {{ .Hugo.Generator }}
 

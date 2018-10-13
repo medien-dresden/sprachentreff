@@ -21,10 +21,11 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav navbar-right">
-                <li><a href="{{ .Site.BaseURL }}">{{ .Site.Params.home }}</a></li>
               {{ range .Site.Menus.header }}
                 <li><a href="{{ .URL }}/">{{ .Name }}</a></li>
               {{ end }}
+                <li class="visible-xs"><a href="#"><i class="fa fa-lg fa-phone"></i>0351 438 9765 839</a></li><!-- TODO -->
+                <li class="visible-xs"><a href="#"><i class="fa fa-lg fa-envelope"></i>mail@sprachentreff.de</a></li><!-- TODO -->
               </ul>
             </div><!-- /.navbar-collapse -->
           </div><!-- /.container-fluid -->
