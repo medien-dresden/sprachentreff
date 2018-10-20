@@ -142,7 +142,7 @@ font header .navbar-default .navbar-nav li a:hover {
   padding: 200px 0 280px 0;
   position: relative;
 }
-#slider:before {
+#slider:before, #feature:before {
   content: "";
   position: absolute;
   left: 0;
@@ -294,9 +294,10 @@ font header .navbar-default .navbar-nav li a:hover {
   font-size: 28px;
   font-weight: 600;
   margin-bottom: 30px;
+  color: #E3E3E4;
 }
 #feature p {
-  color: #8d8f92;
+  color: #E3E3E4;
   margin-bottom: 20px;
 }
 #feature .btn-view-works {
