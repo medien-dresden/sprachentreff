@@ -210,6 +210,9 @@ px      68    160    252    */
   #service .thumbnail {
     padding-bottom: 70px;
   }
+  #service .service-item {
+    height: 200px;
+  }
   /*--
 	call-to-action Start 
 --*/

@@ -165,7 +165,7 @@ font header .navbar-default .navbar-nav li a:hover {
 }
 #slider .block h1 {
   font-family: 'Roboto', sans-serif;
-  font-weight: 100;
+  font-weight: 400;
   font-size: 45px;
   line-height: 60px;
   letter-spacing: 6px;
@@ -212,7 +212,7 @@ font header .navbar-default .navbar-nav li a:hover {
 }
 #service .service-item {
   padding-bottom: 30px;
-  height: 250px;
+  height: 270px;
 }
 #service .service-item i {
   font-size: 60px;
