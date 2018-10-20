@@ -20,17 +20,17 @@ theme = "airspace"
   [[menu.footer]]
     weight = 1
     name = "Impressum"
-    url = "/impressum"
+    url = "/impressum/"
     
   [[menu.footer]]
     weight = 2
     name = "Datenschutz"
-    url = "/datenschutz"
+    url = "/datenschutz/"
 
   [[menu.footer]]
     weight = 3
     name = "Kontakt"
-    url = "/kontakt"
+    url = "/kontakt/"
 
 # The site's parameters
 [params]
