@@ -1,1 +1,28 @@
-Hello!
+<!DOCTYPE html>
+<html>
+<head>
+	{{ partial "head.html" . }}
+</head>
+<body>
+
+	{{ partial "header.html" . }}
+	
+	<main>
+    <section id="service">
+      <div class="container">
+        <div class="row">
+          <div class="section-title">
+            <h2>Wir haben gesucht…</h2>
+            <p>…aber die von Ihnen angeforderte Seite leider nicht gefunden.</p>
+            <br />
+            <a href="/" class="btn btn-main">zur Hauptseite</a>
+          </div>
+        </div>
+    </section>
+  </main>
+
+	{{ partial "footer.html" . }}
+
+	
+</body>
+</html>
