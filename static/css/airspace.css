@@ -25,6 +25,7 @@
 body {
   font-family: 'Open Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
+  padding-top: 70px;
 }
 h1,
 h2,
@@ -64,6 +65,7 @@ a:active {
 
 .section-title {
   margin-bottom: 70px;
+  padding: 0px 15px;
 }
 .section-title h2 {
   text-transform: uppercase;
@@ -104,6 +106,9 @@ header {
 header .navbar {
   margin-bottom: 0;
   border: 0px;
+  -webkit-box-shadow: 0 -15px 10px 15px #555555;
+  -moz-box-shadow: 0 -15px 10px 15px #555555;
+  box-shadow: 0 -15px 10px 15px #555555;
 }
 header .navbar-brand {
   height: 100%;
@@ -111,6 +116,7 @@ header .navbar-brand {
 header .navbar-default {
   background: none;
   border: 0px;
+  background-color: white;
 }
 header ul.navbar-right {
   padding: 12px 0px;

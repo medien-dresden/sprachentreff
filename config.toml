@@ -66,8 +66,8 @@ theme = "airspace"
     title = "Lernen Sie Englisch, Spanisch, Französisch, Italienisch oder Tschechisch"
     content = "... vom Anfänger bis zur Profikonversation, zwanglos um den runden Tisch gruppiert, bei Kaffee, Tee und Gebäck. Unsere Kursleiter bringen Ihnen Vokabeln, Grammatik und vor allem 'freies Sprechen' bei, aber es gibt keinen Leistungszwang und wenig Hausaufgaben, denn Sie sollen ja gern zum Sprachtreff e.V. kommen, als Ausgleich zu Ihrem täglichen Stress. Sie erzielen mit Sicherheit gute Lernerfolge, da wir maximal 7 Teilnehmer(innen) pro Kurs aufnehmen."
     [params.feature.button]
-      caption = "View Works"
-      url = "#"
+      caption = "jetzt anmelden"
+      url = "/kontakt/"
 
   [params.call]
     enable = true
