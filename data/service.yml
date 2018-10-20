@@ -4,48 +4,48 @@ subtitle: >
   Unser kleines Dresdner Team von Sprachlehrern mit Auslandserfahrung und Muttersprachlern in allen gängigen Fremdsprachen geht individuell auf die Wünsche unserer Kursteilnehmer und -teilnehmerinnen ein.
 content:
 
-  - icon: ion-coffee
+  - icon: ionicons ion-ios-timer
     name: kostenlose Probierstunde
     text: |
       Wenn Sie bereits Vorkenntnisse haben,  
       empfehlen wir Ihnen eine kostenlose Probierstunde.
 
-  - icon: ion-compass
+  - icon: ionicons ion-ios-fitness
     name: Intensivkurse
     text: |
       Erkundigen Sie sich nach unseren  
       Intensivkurs-Wochen:  
       Werktags von 8.00 bis 16.00 Uhr.
 
-  - icon: ion-image
+  - icon: ionicons ion-ios-people
     name: Samstagskurse
     text: |
       Intensivkurse an insgesamt  
       acht Samstagen jeweils von  
       9.30 bis 11.45 Uhr.
 
-  - icon: ion-bug
+  - icon: ionicons ion-ios-gift
     name: Geschenkgutscheine
     text: |
       Für unsere Kurse bieten wir  
       Ihnen auch Gutscheine  
       zum verschenken.
 
-  - icon: ion-bug
+  - icon: ionicons ion-ios-person
     name: Einzelunterricht
     text: |
       Bei Bedarf erteilen wir  
       auch Einzelunterricht und  
       Deutschunterricht für Ausländer.
 
-  - icon: ion-bug
+  - icon: ionicons ion-ios-help-buoy
     name: Englisch-Nachhilfe
     text: |
       Ihren Kindern bieten wir  
       Nachhilfe zum halben Preis bei  
       Teilnahme an laufenden Kursen.
       
-  - icon: ion-bug
+  - icon: ionicons ion-ios-shuffle
     name: Übersetzungen
     text: |
       Außerdem bieten wir Ihnen  
