@@ -106,9 +106,9 @@ header {
 header .navbar {
   margin-bottom: 0;
   border: 0px;
-  -webkit-box-shadow: 0 -15px 10px 15px #555555;
-  -moz-box-shadow: 0 -15px 10px 15px #555555;
-  box-shadow: 0 -15px 10px 15px #555555;
+  -webkit-box-shadow: 0 -15px 10px 15px #AAAAAA;
+  -moz-box-shadow: 0 -15px 10px 15px #AAAAAA;
+  box-shadow: 0 -15px 10px 15px #AAAAAA;
 }
 header .navbar-brand {
   height: 100%;
@@ -145,7 +145,7 @@ font header .navbar-default .navbar-nav li a:hover {
   background-size: cover;
   background-attachment: fixed;
   background-position: 50% 0%;
-  padding: 200px 0 280px 0;
+  padding: 150px 0 230px 0;
   position: relative;
 }
 #slider:before, #feature:before {
@@ -212,6 +212,7 @@ font header .navbar-default .navbar-nav li a:hover {
 }
 #service .service-item {
   padding-bottom: 30px;
+  /* height: 250px; */
 }
 #service .service-item i {
   font-size: 60px;
@@ -860,7 +861,7 @@ footer .footer-manu ul {
 }
 footer .footer-manu ul li {
   display: inline-block;
-  padding: 0px 20px;
+  padding: 0px 15px;
 }
 footer .footer-manu ul li a {
   display: inline-block;
