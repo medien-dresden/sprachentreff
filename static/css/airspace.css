@@ -237,6 +237,7 @@ font header .navbar-default .navbar-nav li a:hover {
   background: url("../img/call-to-action-bg.jpg") no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  background-position: top center;
   padding: 70px 0px;
   position: relative;
   text-align: center;
