@@ -428,7 +428,7 @@ font header .navbar-default .navbar-nav li a:hover {
 #global-header .block {
   color: #E3E3E4;
   margin: 0 auto;
-  padding-left: 90px;
+  
   text-align: center;
 }
 #global-header .block h1 {
@@ -693,6 +693,13 @@ font header .navbar-default .navbar-nav li a:hover {
   font-weight: 300;
   letter-spacing: 1px;
   word-spacing: 3px;
+}
+/*--
+	imprint Start
+--*/
+#imprint {
+  padding-top: 70px;
+  padding-bottom: 35px;
 }
 /*--
 	contact-form Start

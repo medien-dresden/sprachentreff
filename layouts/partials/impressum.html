@@ -4,9 +4,43 @@
 <section id="imprint">
     <div class="container">
         <div class="row">
+          <div class="col-sm-6">
+            <div class="block">
+              <h3>Angaben nach §5 TMG</h3>
+              <p>{{ .Params.adresse | markdownify }}</p>
+              <p><strong>Registergericht</strong> &middot; {{ .Params.register.gericht }}<br />
+              <strong>Registernummer</strong> &middot; {{ .Params.register.nummer }}</p>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="block">
+              <h3>Vorstandsvertretung</h3>
+              <p>{{ .Params.vorstand | markdownify }}</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="block">
+              <h3>Kontakt</h3>
+              <p><strong>Telefon</strong> &middot; <a href="tel:{{ .Params.kontakt.telefon }}">{{ .Params.kontakt.telefon }}</a><br />
+              <strong>E-Mail</strong> &middot; <a href="mailto:{{ .Params.kontakt.mail }}">{{ .Params.kontakt.mail }}</a></p>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="block">
+              <h3>Umsatzsteuer</h3>
+              <p><strong>Identifikationsnummer</strong> &middot; {{ .Params.umsatzsteuernummer }}<br />
+                Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
+            </div>
+          </div>
+        </div>
+        
+        <hr />
+        <div class="row">
           <div class="col-md-12">
             <div class="block">
-              Hello World
+              {{ .Content }}
             </div>
           </div>
         </div>

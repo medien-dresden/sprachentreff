@@ -1,6 +1,6 @@
 title = "Dresdner Sprachentreff e.V."
-baseURL = "https://www.example.com"
-languageCode = "en-us"
+baseURL = "https://sprachentreff.medien-dresden.de/"
+languageCode = "de-DE"
 theme = "airspace"
 
 [menu]

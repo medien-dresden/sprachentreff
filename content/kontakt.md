@@ -1,5 +1,4 @@
-+++
-title = "Kontakt"
-id = "contact"
-draft = true
-+++
+---
+title: Kontakt
+id: contact
+---
