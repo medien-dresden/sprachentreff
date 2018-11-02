@@ -1,9 +1,8 @@
 ---
 title: Impressum
+subtitle: des Dresdner Sprachentreff e.V.
 id: impressum
-register:
-  gericht: Dresden
-  nummer: "0000"
+call: true
 ---
 
 ### Haftung für Inhalte
