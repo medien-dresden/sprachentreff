@@ -25,8 +25,8 @@
                 <li><a href="{{ .URL }}/" title="{{ .Title }}">{{ .Name }}</a></li>
               {{ end }}
                 <hr class="visible-xs" />
-                <li><a href="tel:+49 351 268 59 86"><i class="fa fa-lg fa-phone"></i>+49 351 268 59 86</a></li><!-- TODO -->
-                <li class="visible-xs"><a href="mailto:info@sprachentreff.de"><i class="fa fa-lg fa-envelope"></i>info@sprachentreff.de</a></li><!-- TODO -->
+                {{ with $.Page.Site.Params.phone }}<li><a href="tel:{{ . }}"><i class="fa fa-lg fa-phone"></i>{{ . }}</a></li>{{ end }}
+                {{ with $.Page.Site.Params.email }}<li class="visible-xs"><a href="mailto:{{ . }}"><i class="fa fa-lg fa-envelope"></i>{{ . }}</a></li>{{ end }}
               </ul>
             </div><!-- /.navbar-collapse -->
           </div><!-- /.container-fluid -->

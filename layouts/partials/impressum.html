@@ -7,15 +7,15 @@
           <div class="col-sm-6">
             <div class="block">
               <h3>Angaben nach §5 TMG</h3>
-              <p>{{ .Params.adresse | markdownify }}</p>
-              <p><strong>Registergericht</strong> &middot; {{ .Params.register.gericht }}<br />
-              <strong>Registernummer</strong> &middot; {{ .Params.register.nummer }}</p>
+              <p>{{ $.Page.Site.Params.address.long | markdownify }}</p>
+              <p><strong>Registergericht</strong> &middot; {{ $.Page.Site.Params.society.register_court }}<br />
+              <strong>Registernummer</strong> &middot; {{ $.Page.Site.Params.society.register_number }}</p>
             </div>
           </div>
           <div class="col-sm-6">
             <div class="block">
               <h3>Vorstandsvertretung</h3>
-              <p>{{ .Params.vorstand | markdownify }}</p>
+              <p>{{ $.Page.Site.Params.society.chairman | markdownify }}</p>
             </div>
           </div>
         </div>
@@ -23,14 +23,16 @@
           <div class="col-sm-6">
             <div class="block">
               <h3>Kontakt</h3>
-              <p><strong>Telefon</strong> &middot; <a href="tel:{{ .Params.kontakt.telefon }}">{{ .Params.kontakt.telefon }}</a><br />
-              <strong>E-Mail</strong> &middot; <a href="mailto:{{ .Params.kontakt.mail }}">{{ .Params.kontakt.mail }}</a></p>
+              <p>
+                {{ with $.Page.Site.Params.phone }}<strong>Telefon</strong> &middot; <a href="tel:{{ . }}">{{ . }}</a>{{ end }}<br />
+                {{ with $.Page.Site.Params.email }}<strong>E-Mail</strong> &middot; <a href="mailto:{{ . }}">{{ . }}</a>{{ end }}
+              </p>
             </div>
           </div>
           <div class="col-sm-6">
             <div class="block">
               <h3>Umsatzsteuer</h3>
-              <p><strong>Identifikationsnummer</strong> &middot; {{ .Params.umsatzsteuernummer }}<br />
+              <p><strong>Identifikationsnummer</strong> &middot; {{ $.Page.Site.Params.society.tax_number }}<br />
                 Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
             </div>
           </div>

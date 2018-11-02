@@ -1,0 +1,4 @@
+<p>
+  {{ with $.Page.Site.Params.phone }}<strong>Telefon</strong> &middot; <a href="tel:{{ . }}">{{ . }}</a>{{ end }}<br />
+  {{ with $.Page.Site.Params.email }}<strong>E-Mail</strong> &middot; <a href="mailto:{{ . }}">{{ . }}</a>{{ end }}
+</p>

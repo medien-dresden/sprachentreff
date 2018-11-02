@@ -1,0 +1,7 @@
+{{ if isset .Params "long" }}
+<p>
+{{ $.Page.Site.Params.address.long | markdownify }}
+</p>
+{{ else }}
+{{ $.Page.Site.Params.address.short }}
+{{ end }}

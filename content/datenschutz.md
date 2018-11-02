@@ -63,14 +63,8 @@ Einwilligung ist jede von der betroffenen Person freiwillig für den bestimmten 
 
 Verantwortlicher im Sinne der Datenschutz-Grundverordnung, sonstiger in den Mitgliedstaaten der Europäischen Union geltenden Datenschutzgesetze und anderer Bestimmungen mit datenschutzrechtlichem Charakter ist:
 
-Dresdner Sprachentreff e.V.
-Wilthener Straße 6a
-01324 Dresden
-Deutschland
-
-Telefon &middot; 0351 268 59 86
-E-Mail &middot; info@sprachentreff.de
-Website &middot; sprachentreff.de
+{{< address long="true" >}}
+{{< contact >}}
 
 ## 3\. Cookies
 
