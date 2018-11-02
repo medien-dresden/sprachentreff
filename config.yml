@@ -24,6 +24,11 @@ menu:
       name: Kontakt
       url: /kontakt/
 
+taxonomies:
+  - tag: ""
+    group: ""
+    category: ""
+
 params:
   
   address:
@@ -47,7 +52,7 @@ params:
       01324 Dresden
 
   custom_css: []
-  dateFormat: 6 January 2006
+  dateFormat: 6. January 2006
   home: Home
   
   slider:
@@ -68,7 +73,7 @@ params:
       Urlaub, auf Dienstreisen.
       
   blog:
-    enable: true
+    enable: false
     title: Get The Latest On What We're doing
     subtitle: 'Catch up with us, anytime and anywhere'
     
@@ -101,18 +106,13 @@ params:
       
   contact:
     enable: true
-    title: Drop us a note
-    subtitle: Don’t just take our word for it. Check out some of our latest work.
     form:
-      name: Your name
-      email: Your email
-      subject: Your subject
-      message: Your message
-      button: Send message
+      name: Ihr Name
+      email: Ihre E-Mail Adresse
+      subject: Ihr Anliegen
+      message: Ihre Nachricht
+      button: senden
     box:
-      title: Stop by for a visit
-      address: 'North Main Street, Brooklyn Australia'
-      email: 'Email: contact@mail.com'
-      phone: 'Phone: +88 01672 506 744'
+      title: Kontaktieren Sie uns ...
     gmaps:
-      title: We Also Count in Google Maps
+      title: ... und kommen Sie vorbei
