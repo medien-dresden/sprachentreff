@@ -47,10 +47,13 @@ p {
   font-size: 15px;
   line-height: 28px;
 }
-ul {
+ul .wo-style {
   padding: 0;
   margin: 0;
   list-style: none;
+}
+ul {
+  line-height: 28px;
 }
 a,
 a:active,
@@ -697,7 +700,7 @@ font header .navbar-default .navbar-nav li a:hover {
 
 #imprint, #datenschutz {
   padding-top: 70px;
-  padding-bottom: 35px;
+  padding-bottom: 70px;
 }
 /*--
 	contact-form Start

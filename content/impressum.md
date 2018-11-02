@@ -1,8 +1,8 @@
 ---
 title: Impressum
 id: impressum
-subtitle: Dresdner Sprachentreff e.V.
 adresse: |
+  Dresdner Sprachentreff e.V.  
   Wilthener Straße 6a  
   01324 Dresden
 register:
