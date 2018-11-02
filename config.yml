@@ -3,6 +3,17 @@ baseURL: 'https://sprachentreff.medien-dresden.de/'
 languageCode: de-DE
 theme: airspace
 
+disableKinds:
+  - RSS
+
+frontmatter:
+  lastmod:
+    - lastmod
+    - ":fileModTime"
+    - ":default"
+
+ignoreFiles: [ "static/img/blog.*", "\\.boo$" ]
+
 menu:
   header:
     - weight: 5
