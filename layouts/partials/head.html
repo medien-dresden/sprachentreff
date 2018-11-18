@@ -18,17 +18,23 @@
 {{ .Hugo.Generator }}
 
 <!-- CSS -->
-<link rel="stylesheet" href="{{ .Site.BaseURL }}css/owl.carousel.css" />
-<link rel="stylesheet" href="{{ .Site.BaseURL }}css/bootstrap.min.css" />
-<link rel="stylesheet" href="{{ .Site.BaseURL }}css/font-awesome.min.css" />
-<link rel="stylesheet" href="{{ .Site.BaseURL }}css/airspace-local-fonts.css" />
-<link rel="stylesheet" href="{{ .Site.BaseURL }}css/airspace.css" />
-<link rel="stylesheet" href="{{ .Site.BaseURL }}css/style.css" />
-<link rel="stylesheet" href="{{ .Site.BaseURL }}css/ionicons.min.css" />
-<link rel="stylesheet" href="{{ .Site.BaseURL }}css/animate.css" />
-<link rel="stylesheet" href="{{ .Site.BaseURL }}css/responsive.css" />
-<link rel="stylesheet" href="{{ .Site.BaseURL }}css/syntax.css" />
-<link rel="stylesheet" href="{{ .Site.BaseURL }}css/cookieconsent.min.css" />
+{{ $carousel := resources.Get "css/owl.carousel.css" | minify }}
+{{ $bootstrap := resources.Get "css/bootstrap.min.css" }}
+{{ $fontAwesome := resources.Get "css/font-awesome.min.css" }}
+{{ $airspaceFonts := resources.Get "css/airspace-local-fonts.css" | minify }}
+{{ $airspace := resources.Get "css/airspace.css" | minify }}
+{{ $styles := resources.Get "css/style.css" | minify }}
+{{ $animate := resources.Get "css/animate.css" | minify }}
+{{ $responsive := resources.Get "css/responsive.css" | minify }}
+{{ $ionicons := resources.Get "css/ionicons.min.css" }}
+{{ $syntax := resources.Get "css/syntax.css" | minify }}
+{{ $cookieConsent := resources.Get "css/cookieconsent.min.css" }}
+
+{{ $css := slice $carousel $bootstrap $fontAwesome $airspaceFonts $airspace $styles $animate $responsive $ionicons $syntax $cookieConsent | resources.Concat "bundle.css" | fingerprint }}
+
+<link rel="stylesheet"
+      href="{{ $css.Permalink }}"
+      integrity="{{ $css.Data.Integrity }}">
 
 {{ range .Site.Params.custom_css -}}
 <link rel="stylesheet" href="{{ . | absURL }}">
