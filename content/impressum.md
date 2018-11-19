@@ -3,6 +3,9 @@ title: Impressum
 subtitle: des Dresdner Sprachentreff e.V.
 id: impressum
 call: true
+menu:
+  footer:
+    weight: 1
 
 ---
 ### Haftung für Inhalte

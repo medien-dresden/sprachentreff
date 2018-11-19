@@ -3,8 +3,12 @@ title: Förderung
 subtitle: Bildungsprämie des Bundes
 id: förderung
 call: false
----
+menu:
+  header:
+    weight: 2
+    title: Förderung durch Bildungsprämie
 
+---
 Mit der Bildungsprämie beteiligt sich die Bundesregierung an den Kosten qualifizierter Weiterbildungen, welche Ihrer beruflichen Zukunft förderlich sind, z.B. an einer Sprachausbildung Englisch beim Dresdner Sprachentreff e. V.
 Den Prämiengutschein in Höhe von maximal 500 &euro; erhalten Erwerbstätige und Personen in Elternzeit, deren zu versteuerndes Jahreseinkommen unter Berücksichtigung der Kinderfreibeträge derzeit 25.600 &euro; nicht übersteigt (51.200 &euro; bei gemeinsamer Veranlagung).
 Dabei wird nicht das Bruttoeinkommen betrachtet, sondern die Summe, welche im letzten Steuerbescheid in der Tabelle zur Berechnung des Solidaritätszuschlages steht.
