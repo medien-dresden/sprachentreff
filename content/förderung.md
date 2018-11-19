@@ -2,7 +2,7 @@
 title: Förderung
 subtitle: Bildungsprämie des Bundes
 id: förderung
-call: false
+call: true
 menu:
   header:
     weight: 2
