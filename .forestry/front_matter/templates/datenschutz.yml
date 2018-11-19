@@ -27,3 +27,5 @@ fields:
   type: boolean
   hidden: false
   default: ''
+pages:
+- content/datenschutz.md
