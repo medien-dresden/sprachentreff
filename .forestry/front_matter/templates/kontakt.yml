@@ -1,0 +1,25 @@
+---
+label: Kontakt
+hide_body: 
+is_partial: 
+fields:
+- name: title
+  label: Title
+  type: text
+  hidden: false
+  default: ''
+- name: subtitle
+  label: Subtitle
+  type: text
+  hidden: false
+  default: ''
+- name: id
+  label: Id
+  type: text
+  hidden: false
+  default: ''
+- name: call
+  label: Call
+  type: boolean
+  hidden: false
+  default: ''
