@@ -1,25 +1,29 @@
 ---
-label: Datenschutz
-hide_body: 
-is_partial: 
+label: Content
+hide_body: false
+is_partial: false
 fields:
 - name: title
-  label: Title
+  label: Titel
   type: text
   hidden: false
   default: ''
+  config:
+    required: true
 - name: subtitle
-  label: Subtitle
+  label: Untertitel
   type: text
   hidden: false
   default: ''
+  config:
+    required: true
 - name: id
   label: Id
   type: text
-  hidden: false
+  hidden: true
   default: ''
 - name: call
-  label: Call
+  label: Hinweis zur Förderung anzeigen
   type: boolean
   hidden: false
   default: ''
