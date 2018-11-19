@@ -28,4 +28,5 @@ fields:
   hidden: false
   default: ''
 pages:
+- content/impressum.md
 - content/datenschutz.md
