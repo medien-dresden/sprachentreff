@@ -6,7 +6,7 @@ webhook_url:
 sections:
 - type: directory
   path: content
-  label: Pages
+  label: Unterseiten
   create: all
   match: "*"
 upload_dir: static/uploads
