@@ -7,7 +7,7 @@ sections:
 - type: directory
   path: content
   label: Unterseiten
-  create: all
+  create: none
   match: "*"
 upload_dir: static/uploads
 public_path: "/uploads"
