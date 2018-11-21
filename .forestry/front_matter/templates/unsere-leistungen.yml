@@ -14,7 +14,7 @@ fields:
   hidden: false
   default: ''
 - name: subtitle
-  label: Subtitle
+  label: Beschreibung
   type: textarea
   hidden: false
   default: ''
