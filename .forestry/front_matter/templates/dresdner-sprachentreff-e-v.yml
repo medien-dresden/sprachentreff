@@ -156,11 +156,16 @@ fields:
       type: text
       hidden: false
       default: ''
-    - name: chairman
+    - type: textarea
+      name: chairman
       label: Vorstandsvertretung
-      type: text
-      hidden: false
       default: ''
+      config:
+        wysiwyg: true
+        schema:
+          format: markdown
+        required: true
+      description: mehrzeilig mit Name und Adresse
     hidden: false
     default: ''
   - name: slider
