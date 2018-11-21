@@ -37,7 +37,7 @@ params:
     chairman: "Marion Pestel  \nWilthener Straße 6a  \n01324 Dresden\n"
   slider:
     enable: true
-    title: Dresdner<br>Sprachentreff<br>und so
+    title: Dresdner<br>Sprachentreff
     subtitle: Sprachkurse vom Anfänger zum Profi</br>Mit maximal 7 Teilnehmern pro
       Kurs
   wrapper:
