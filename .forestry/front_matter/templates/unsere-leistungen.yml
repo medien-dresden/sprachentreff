@@ -27,13 +27,14 @@ fields:
     type: text
     hidden: false
     default: ''
+    description: Liste von Icons unter https://ionicons.com/
   - name: name
     label: Name
     type: text
     hidden: false
     default: ''
   - name: text
-    label: Text
+    label: Beschreibung
     type: text
     hidden: false
     default: ''
