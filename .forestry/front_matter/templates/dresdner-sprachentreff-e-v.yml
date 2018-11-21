@@ -188,7 +188,7 @@ fields:
     - name: enable
       label: Enable
       type: boolean
-      hidden: false
+      hidden: true
       default: ''
     - name: title
       label: Überschrift
