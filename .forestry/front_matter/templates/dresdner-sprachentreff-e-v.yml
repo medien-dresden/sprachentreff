@@ -135,7 +135,7 @@ fields:
     hidden: false
     default: ''
   - name: society
-    label: Society
+    label: Verein
     type: field_group
     fields:
     - name: register_court
