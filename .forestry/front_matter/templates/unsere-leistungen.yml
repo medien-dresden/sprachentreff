@@ -1,0 +1,41 @@
+---
+label: Unsere Leistungen
+hide_body: 
+is_partial: 
+fields:
+- name: enable
+  label: Enable
+  type: boolean
+  hidden: false
+  default: ''
+- name: title
+  label: Title
+  type: text
+  hidden: false
+  default: ''
+- name: subtitle
+  label: Subtitle
+  type: textarea
+  hidden: false
+  default: ''
+- name: content
+  label: Content
+  type: field_group_list
+  fields:
+  - name: icon
+    label: Icon
+    type: text
+    hidden: false
+    default: ''
+  - name: name
+    label: Name
+    type: text
+    hidden: false
+    default: ''
+  - name: text
+    label: Text
+    type: text
+    hidden: false
+    default: ''
+  hidden: false
+  default: ''
