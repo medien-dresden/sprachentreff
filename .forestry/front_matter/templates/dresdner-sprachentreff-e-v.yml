@@ -322,7 +322,7 @@ fields:
       hidden: false
       default: ''
     - name: box
-      label: über Kontaktinfos
+      label: über den Kontaktinfos
       type: field_group
       fields:
       - name: title
