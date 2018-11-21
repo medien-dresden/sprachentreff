@@ -106,68 +106,6 @@ fields:
     type: text
     hidden: true
     default: ''
-  - name: address
-    label: Adresse
-    type: field_group
-    fields:
-    - name: short
-      label: Kurzform
-      type: text
-      hidden: false
-      default: ''
-      description: in eine Zeile
-    - type: textarea
-      default: ''
-      name: long
-      label: mehrzeilig
-      description: inklusive Name der Institution
-      config:
-        wysiwyg: true
-        schema:
-          format: markdown
-    hidden: false
-    default: ''
-  - name: phone
-    label: Telefonnummer
-    type: text
-    hidden: false
-    default: ''
-  - name: email
-    label: E-Mail Adresse
-    type: text
-    hidden: false
-    default: ''
-  - name: society
-    label: Informationen zum Verein
-    type: field_group
-    fields:
-    - name: register_court
-      label: zuständiges Vereinsregistergericht
-      type: text
-      hidden: false
-      default: ''
-    - name: register_number
-      label: Vereinsregisternummer
-      type: text
-      hidden: false
-      default: ''
-    - name: tax_number
-      label: Umsatzsteueridentifikationsnummer
-      type: text
-      hidden: false
-      default: ''
-    - type: textarea
-      name: chairman
-      label: Vorstandsvertretung
-      default: ''
-      config:
-        wysiwyg: true
-        schema:
-          format: markdown
-        required: true
-      description: mehrzeilig mit Name und Adresse
-    hidden: false
-    default: ''
   - name: slider
     label: Überschrift der Startseite
     type: field_group
@@ -257,6 +195,68 @@ fields:
         default: ''
       hidden: false
       default: ''
+    hidden: false
+    default: ''
+  - name: address
+    label: Adresse
+    type: field_group
+    fields:
+    - name: short
+      label: Kurzform
+      type: text
+      hidden: false
+      default: ''
+      description: in eine Zeile
+    - type: textarea
+      default: ''
+      name: long
+      label: mehrzeilig
+      description: inklusive Name der Institution
+      config:
+        wysiwyg: true
+        schema:
+          format: markdown
+    hidden: false
+    default: ''
+  - name: phone
+    label: Telefonnummer
+    type: text
+    hidden: false
+    default: ''
+  - name: email
+    label: E-Mail Adresse
+    type: text
+    hidden: false
+    default: ''
+  - name: society
+    label: Informationen zum Verein
+    type: field_group
+    fields:
+    - name: register_court
+      label: zuständiges Vereinsregistergericht
+      type: text
+      hidden: false
+      default: ''
+    - name: register_number
+      label: Vereinsregisternummer
+      type: text
+      hidden: false
+      default: ''
+    - name: tax_number
+      label: Umsatzsteueridentifikationsnummer
+      type: text
+      hidden: false
+      default: ''
+    - type: textarea
+      name: chairman
+      label: Vorstandsvertretung
+      default: ''
+      config:
+        wysiwyg: true
+        schema:
+          format: markdown
+        required: true
+      description: mehrzeilig mit Name und Adresse
     hidden: false
     default: ''
   - name: call
