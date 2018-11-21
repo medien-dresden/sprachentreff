@@ -139,22 +139,22 @@ fields:
     type: field_group
     fields:
     - name: register_court
-      label: Register court
+      label: zuständiges Vereinsregistergericht
       type: text
       hidden: false
       default: ''
     - name: register_number
-      label: Register number
+      label: Vereinsregisternummer
       type: text
       hidden: false
       default: ''
     - name: tax_number
-      label: Tax number
+      label: Umsatzsteueridentifikationsnummer
       type: text
       hidden: false
       default: ''
     - name: chairman
-      label: Chairman
+      label: Vorstandsvertretung
       type: text
       hidden: false
       default: ''
