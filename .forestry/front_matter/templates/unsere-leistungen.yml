@@ -19,7 +19,7 @@ fields:
   hidden: false
   default: ''
 - name: content
-  label: Content
+  label: Leistungen
   type: field_group_list
   fields:
   - name: icon
@@ -39,5 +39,7 @@ fields:
     default: ''
   hidden: false
   default: ''
+  config:
+    labelField: name
 pages:
 - data/service.yml
