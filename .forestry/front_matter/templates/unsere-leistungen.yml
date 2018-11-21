@@ -39,3 +39,5 @@ fields:
     default: ''
   hidden: false
   default: ''
+pages:
+- data/service.yml
