@@ -186,11 +186,14 @@ fields:
         wysiwyg: true
         schema:
           format: html
-    - name: subtitle
+    - type: textarea
+      name: subtitle
       label: Untertitel
-      type: text
-      hidden: false
-      default: ''
+      config:
+        required: true
+        wysiwyg: true
+        schema:
+          format: html
     hidden: false
     default: ''
   - name: wrapper
