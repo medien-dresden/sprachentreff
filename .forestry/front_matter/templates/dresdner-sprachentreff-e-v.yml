@@ -362,3 +362,5 @@ fields:
     default: ''
   hidden: false
   default: ''
+pages:
+- config.yml
