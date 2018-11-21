@@ -182,7 +182,7 @@ fields:
     hidden: false
     default: ''
   - name: wrapper
-    label: Wrapper
+    label: Willkommenstext der Startseite
     type: field_group
     fields:
     - name: enable
@@ -191,17 +191,17 @@ fields:
       hidden: false
       default: ''
     - name: title
-      label: Title
+      label: Überschrift
       type: text
       hidden: false
       default: ''
     - name: italic
-      label: Italic
+      label: kursiver Abschnitt
       type: textarea
       hidden: false
       default: ''
     - name: paragraph
-      label: Paragraph
+      label: normaler Abschnitt
       type: textarea
       hidden: false
       default: ''
