@@ -8,8 +8,8 @@ fields:
   type: boolean
   hidden: true
   default: true
-- name: title
-  label: Title
+- name: Untertitel
+  label: Titel
   type: text
   hidden: false
   default: ''
