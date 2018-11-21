@@ -5,15 +5,15 @@ admin_path: "/admin"
 webhook_url: 
 sections:
 - type: directory
-  path: data
-  label: Service
-  create: none
-  match: "**/*"
-- type: directory
   path: content
   label: Unterseiten
   create: none
   match: "*"
+- type: directory
+  path: data
+  label: Service
+  create: none
+  match: "**/*"
 upload_dir: static/uploads
 public_path: "/uploads"
 front_matter_path: ''
