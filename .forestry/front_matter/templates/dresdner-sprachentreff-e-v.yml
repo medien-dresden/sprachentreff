@@ -125,12 +125,12 @@ fields:
     hidden: false
     default: ''
   - name: phone
-    label: Phone
+    label: Telefonnummer
     type: text
     hidden: false
     default: ''
   - name: email
-    label: Email
+    label: E-Mail Adresse
     type: text
     hidden: false
     default: ''
