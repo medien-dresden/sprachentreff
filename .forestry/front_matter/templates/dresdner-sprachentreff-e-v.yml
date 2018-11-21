@@ -119,8 +119,8 @@ fields:
     - type: textarea
       default: ''
       name: long
-      label: mehrzeilig mit Name der Institution
-      description: ''
+      label: mehrzeilig
+      description: inklusive Name der Institution
       config:
         wysiwyg: true
         schema:
