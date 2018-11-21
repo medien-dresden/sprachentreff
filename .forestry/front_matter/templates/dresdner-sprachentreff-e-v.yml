@@ -89,25 +89,25 @@ fields:
       type: text
       hidden: false
       default: ''
-    hidden: false
+    hidden: true
     default: ''
   - name: custom_css
     label: Custom css
     type: list
-    hidden: false
+    hidden: true
     default: ''
   - name: dateFormat
     label: Dateformat
     type: text
-    hidden: false
+    hidden: true
     default: ''
   - name: home
     label: Home
     type: text
-    hidden: false
+    hidden: true
     default: ''
   - name: address
-    label: Address
+    label: Adresse
     type: field_group
     fields:
     - name: short
