@@ -161,7 +161,7 @@ fields:
     hidden: false
     default: ''
   - name: slider
-    label: Slider
+    label: Überschrift der Startseite
     type: field_group
     fields:
     - name: enable
