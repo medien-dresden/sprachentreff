@@ -111,15 +111,17 @@ fields:
     type: field_group
     fields:
     - name: short
-      label: Short
+      label: Kurzform
       type: text
       hidden: false
       default: ''
+      description: in eine Zeile
     - name: long
-      label: Long
+      label: Langform
       type: text
       hidden: false
       default: ''
+      description: mehrzeilig mit Name der Institution
     hidden: false
     default: ''
   - name: phone
