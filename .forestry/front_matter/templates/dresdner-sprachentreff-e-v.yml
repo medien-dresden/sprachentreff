@@ -178,14 +178,14 @@ fields:
       hidden: true
       default: ''
     - type: textarea
-      name: titel
+      name: title
       label: Titel
       default: ''
       config:
         required: true
         wysiwyg: true
         schema:
-          format: markdown
+          format: html
     - name: subtitle
       label: Untertitel
       type: text
