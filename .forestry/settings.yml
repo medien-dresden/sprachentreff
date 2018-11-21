@@ -11,7 +11,7 @@ sections:
   match: "*"
 - type: directory
   path: data
-  label: Service
+  label: Startseite
   create: none
   match: "**/*"
 upload_dir: static/uploads
