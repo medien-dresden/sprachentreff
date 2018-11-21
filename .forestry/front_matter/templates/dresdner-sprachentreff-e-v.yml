@@ -116,12 +116,15 @@ fields:
       hidden: false
       default: ''
       description: in eine Zeile
-    - name: long
-      label: Langform
-      type: text
-      hidden: false
+    - type: textarea
       default: ''
-      description: mehrzeilig mit Name der Institution
+      name: long
+      label: mehrzeilig mit Name der Institution
+      description: ''
+      config:
+        wysiwyg: true
+        schema:
+          format: markdown
     hidden: false
     default: ''
   - name: phone
