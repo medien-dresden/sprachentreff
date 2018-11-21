@@ -282,16 +282,16 @@ fields:
     hidden: false
     default: ''
   - name: contact
-    label: Contact
+    label: Kontaktformular
     type: field_group
     fields:
     - name: enable
       label: Enable
       type: boolean
-      hidden: false
+      hidden: true
       default: ''
     - name: form
-      label: Form
+      label: Beschriftungen
       type: field_group
       fields:
       - name: name
@@ -300,22 +300,22 @@ fields:
         hidden: false
         default: ''
       - name: email
-        label: Email
+        label: E-Mail
         type: text
         hidden: false
         default: ''
       - name: subject
-        label: Subject
+        label: Betreff
         type: text
         hidden: false
         default: ''
       - name: message
-        label: Message
+        label: Nachricht
         type: text
         hidden: false
         default: ''
       - name: button
-        label: Button
+        label: senden-Button
         type: text
         hidden: false
         default: ''
