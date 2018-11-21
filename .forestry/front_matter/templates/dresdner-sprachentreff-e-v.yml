@@ -175,13 +175,17 @@ fields:
     - name: enable
       label: Enable
       type: boolean
-      hidden: false
+      hidden: true
       default: ''
-    - name: title
+    - type: textarea
+      name: titel
       label: Titel
-      type: text
-      hidden: false
       default: ''
+      config:
+        required: true
+        wysiwyg: true
+        schema:
+          format: html
     - name: subtitle
       label: Untertitel
       type: text
