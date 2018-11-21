@@ -185,7 +185,7 @@ fields:
         required: true
         wysiwyg: true
         schema:
-          format: html
+          format: html-blocks
     - name: subtitle
       label: Untertitel
       type: text
