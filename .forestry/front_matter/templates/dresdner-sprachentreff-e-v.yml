@@ -245,37 +245,37 @@ fields:
     hidden: false
     default: ''
   - name: call
-    label: Call
+    label: Hinweis zur Bildungsprämie
     type: field_group
     fields:
     - name: enable
       label: Enable
       type: boolean
-      hidden: false
+      hidden: true
       default: ''
     - name: title
-      label: Title
+      label: Titel
       type: text
       hidden: false
       default: ''
     - name: paragraph
-      label: Paragraph
+      label: Textabschnitt
       type: textarea
       hidden: false
       default: ''
     - name: button
-      label: Button
+      label: info-Button
       type: field_group
       fields:
       - name: text
-        label: Text
+        label: Beschriftung
         type: text
         hidden: false
         default: ''
       - name: url
         label: Url
         type: text
-        hidden: false
+        hidden: true
         default: ''
       hidden: false
       default: ''
