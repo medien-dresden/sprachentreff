@@ -1,13 +1,13 @@
 ---
 label: Unsere Leistungen
-hide_body: 
-is_partial: 
+hide_body: true
+is_partial: false
 fields:
 - name: enable
   label: Enable
   type: boolean
-  hidden: false
-  default: ''
+  hidden: true
+  default: true
 - name: title
   label: Title
   type: text
