@@ -170,12 +170,12 @@ fields:
       hidden: false
       default: ''
     - name: title
-      label: Title
+      label: Titel
       type: text
       hidden: false
       default: ''
     - name: subtitle
-      label: Subtitle
+      label: Untertitel
       type: text
       hidden: false
       default: ''
