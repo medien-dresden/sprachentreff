@@ -24,8 +24,9 @@
 {{ $waypoints := resources.Get "js/waypoints.min.js" }}
 {{ $main := resources.Get "js/main.js" | minify }}
 {{ $cookieConsent := resources.Get "js/cookieconsent.min.js" }}
+{{ $notify := resources.Get "js/bootstrap-notify.min.js" }}
 
-{{ $script := slice $jquery $bootstrap $carousel $plugins $waypoints $main $cookieConsent | resources.Concat "bundle.js" | fingerprint }}
+{{ $script := slice $jquery $bootstrap $carousel $plugins $waypoints $main $cookieConsent $notify | resources.Concat "bundle.js" | fingerprint }}
 
 <script type="text/javascript" src="{{ $script.Permalink }}" integrity="{{ $script.Data.Integrity }}"></script>
 <script type="text/javascript">
@@ -47,4 +48,18 @@ window.addEventListener("load", function(){
       "href": "{{ .Site.BaseURL }}datenschutz"
     }
   })});
+  
+  if (window.location.hash === '#/message-sent') {
+    $.notify({
+    	message: '{{ $.Page.Site.Params.contact.feedback }}'
+    },{
+    	type: 'success',
+      placement: {
+        align: "center"
+      },
+      offset: {
+        y: 100
+      }
+    });
+  }
 </script>

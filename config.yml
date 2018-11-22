@@ -79,6 +79,7 @@ params:
       subject: Ihr Anliegen
       message: Ihre Nachricht
       button: senden
+    feedback: Ihre Nachricht wurde versandt
     box:
       title: Kontaktieren Sie uns ...
     gmaps:
