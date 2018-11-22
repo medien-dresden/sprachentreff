@@ -26,7 +26,7 @@ fields:
     label: Icon
     type: text
     hidden: false
-    default: ''
+    default: ionicons ion-ios-NAME_DES_ICONS
     description: Liste von Icons unter https://ionicons.com/
   - name: name
     label: Name
