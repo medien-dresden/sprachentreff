@@ -327,6 +327,10 @@ fields:
         default: ''
       hidden: false
       default: ''
+    - type: text
+      default: Ihre Nachricht wurde versandt
+      name: feedback
+      label: Nachricht an Nutzer nach erfolgreichem Versand
     hidden: false
     default: ''
   - name: address
