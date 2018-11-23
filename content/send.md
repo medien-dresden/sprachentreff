@@ -21,12 +21,10 @@ if ($_POST) {
   $subject    = filter_var($_POST["subject"], FILTER_SANITIZE_STRING);
   $message    = filter_var($_POST["message"], FILTER_SANITIZE_STRING);
 
-  $message_body = $user_name .
-    " hat Ihnen folgende Nachricht hinterlassen:\r\n" .
-    $message;
+  $message_body = $message;
   
   $headers = 
-    'From: ' . $from_email . "\r\n" .
+    'From: ' . $user_name . ' <' . $from_email . ">\r\n" .
     'Reply-To: ' . $user_email . "\r\n" .
     'X-Mailer: PHP/' . phpversion();
   
