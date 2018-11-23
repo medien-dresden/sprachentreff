@@ -94,14 +94,14 @@ window.addEventListener("load", function(){
     
     if(proceed){ //everything looks good! proceed...
       //get input field values data to be sent to server
-      var data = {}; //Encode form elements for submission
-      $(this).serializeArray().map(function(x) { data[x.name] = x.value });
       $(form).slideUp('slow', function(){ $(form).remove(); });
       
-      $.post('/send.php', {
-          data: data,
-          dataType: 'json'
-        })
+      $.ajax({
+        url: '/send.php',
+        type: 'post',
+        dataType: 'json',
+        data: $(this).serialize()
+      })
 
         .done(function(response) { 
           $.notify({ message: '{{ $.Page.Site.Params.contact.feedback }}' }, {
