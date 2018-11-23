@@ -75,54 +75,45 @@
 <script type="text/javascript">
 window.addEventListener("load", function(){  
   $("#contact").submit(function(event){
-  	event.preventDefault(); //prevent default action 
-  	var proceed = true;
-  	var form = this;
-  	
-  	//simple validation at client's end
-  	//loop through each field and we simply change border color to red for invalid fields		
-  	$(form).find(':required').each(function(){
-  		if(!$.trim($(this).val())){ //if this field is empty 
-  			proceed = false; //set do not proceed flag
-  		}
-  		//check invalid email
-  		var email_reg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/; 
-  		if($(this).attr("type")=="email" && !email_reg.test($.trim($(this).val()))){
-  			proceed = false; //set do not proceed flag				
-  		}
-  	});	
-  	
-  	if(proceed){ //everything looks good! proceed...
-  		//get input field values data to be sent to server
-    	var data = {}; //Encode form elements for submission
+    event.preventDefault(); //prevent default action 
+    var proceed = true;
+    var form = this;
+    
+    //simple validation at client's end
+    //loop through each field and we simply change border color to red for invalid fields    
+    $(form).find(':required').each(function(){
+      if(!$.trim($(this).val())){ //if this field is empty 
+        proceed = false; //set do not proceed flag
+      }
+      //check invalid email
+      var email_reg = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/; 
+      if($(this).attr("type")=="email" && !email_reg.test($.trim($(this).val()))){
+        proceed = false; //set do not proceed flag        
+      }
+    });  
+    
+    if(proceed){ //everything looks good! proceed...
+      //get input field values data to be sent to server
+      var data = {}; //Encode form elements for submission
       $(this).serializeArray().map(function(x) { data[x.name] = x.value });
-      //$(form).addClass('animated bounceOutUp');
       $(form).slideUp('slow', function(){ $(form).remove(); });
-  		
-  		//Ajax post data to server
-  		$.ajax({
-  			url : '/send.php',
-  			type: 'POST',
-  			dataType : 'json',
-  			data : data
-  		})
       
-  		.success(function(response) { 
-        $.notify({ message: '{{ $.Page.Site.Params.contact.feedback }}' }, {
-          type: 'success',
-          placement: { align: "center" },
-          offset: { y: 100 }
+      $.post('/send.php', { data: data })
+        .done(function(response) { 
+          $.notify({ message: '{{ $.Page.Site.Params.contact.feedback }}' }, {
+            type: 'success',
+            placement: { align: "center" },
+            offset: { y: 100 }
+          });
+        })
+        .fail(function(response) {
+          $.notify({ message: '{{ $.Page.Site.Params.contact.error }}' }, {
+            type: 'danger',
+            placement: { align: "center" },
+            offset: { y: 100 }
+          });
         });
-  		})
-      
-      .fail(function(response) {
-        $.notify({ message: '{{ $.Page.Site.Params.contact.error }}' }, {
-          type: 'danger',
-          placement: { align: "center" },
-          offset: { y: 100 }
-        });
-      });
-  	}
+    }
   });
 });
 </script>
