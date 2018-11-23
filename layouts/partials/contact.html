@@ -98,7 +98,11 @@ window.addEventListener("load", function(){
       $(this).serializeArray().map(function(x) { data[x.name] = x.value });
       $(form).slideUp('slow', function(){ $(form).remove(); });
       
-      $.post('/send.php', { data: data })
+      $.post('/send.php', {
+          data: data,
+          dataType: 'json'
+        })
+
         .done(function(response) { 
           $.notify({ message: '{{ $.Page.Site.Params.contact.feedback }}' }, {
             type: 'success',
@@ -106,6 +110,7 @@ window.addEventListener("load", function(){
             offset: { y: 100 }
           });
         })
+
         .fail(function(response) {
           $.notify({ message: '{{ $.Page.Site.Params.contact.error }}' }, {
             type: 'danger',
