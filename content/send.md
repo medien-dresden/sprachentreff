@@ -2,6 +2,7 @@
 url: "send.php"
 outputs:
   - PHP
+showInSitemap: false
 ---
 <?php
 
