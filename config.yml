@@ -20,10 +20,10 @@ taxonomies:
 mediaTypes:
   application/x-php:
     suffixes:
-      - php
+    - php
 outputFormats:
   PHP:
-    mediaType: "application/x-php"
+    mediaType: application/x-php
     isHTML: false
     isPlainText: true
 params:
@@ -38,7 +38,7 @@ params:
     short: Wilthener Straße 6a, 01324 Dresden
     long: "Dresdner Sprachentreff e.V.  \nWilthener Straße 6a  \n01324 Dresden  \nDeutschland\n"
   phone: 0351 268 59 86
-  email: info@sprachentreff.de
+  email: info@medien-dresden.de
   society:
     register_court: Dresden
     register_number: VR 3663
@@ -89,8 +89,8 @@ params:
       message: Ihre Nachricht
       button: senden
     feedback: Ihre Nachricht wurde versandt
-    error: "Leider konnte Ihre Nachricht nicht versandt werden.
-      Bitte kontaktieren Sie uns via E-Mail oder Telefon"
+    error: Leider konnte Ihre Nachricht nicht versandt werden. Bitte kontaktieren
+      Sie uns via E-Mail oder Telefon.
     box:
       title: Kontaktieren Sie uns ...
     gmaps:

@@ -331,6 +331,11 @@ fields:
       default: Ihre Nachricht wurde versandt
       name: feedback
       label: Nachricht an Nutzer nach erfolgreichem Versand
+    - type: text
+      label: Nachricht an Nutzer nach fehlgeschlagenem Versand
+      name: error
+      default: Leider konnte Ihre Nachricht nicht versandt werden. Bitte kontaktieren
+        Sie uns via E-Mail oder Telefon.
     hidden: false
     default: ''
   - name: address
