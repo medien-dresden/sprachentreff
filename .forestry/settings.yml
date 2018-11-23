@@ -12,7 +12,7 @@ sections:
   label: Unterseiten
   create: none
   match: "*"
-  exclude: send.md
+  exclude: "*send*"
 - type: directory
   path: data
   label: Leistungen
