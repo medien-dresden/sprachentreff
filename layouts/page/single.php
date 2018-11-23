@@ -1,0 +1,1 @@
+{{ replace .RawContent "{{< email >}}" $.Page.Site.Params.email }}

@@ -5,31 +5,29 @@
 <section id="contact-form">
   <div class="container">
     <div class="row">
-      <div class="col-md-6 col-sm-12">
-        <div class="block">
-          <form>
-            <div class="form-group">
-              <input type="text" class="form-control" placeholder="{{ .form.name }}">
-            </div>
-            <div class="form-group">
-              <input type="text" class="form-control" placeholder="{{ .form.email }}">
-            </div>
-            <div class="form-group">
-              <input type="text" class="form-control" placeholder="{{ .form.subject }}">
-            </div>
-          </form>
+      <form id="contact">
+        <div class="col-md-6 col-sm-12">
+          <div class="block">
+              <div class="form-group">
+                <input type="text" name="name" class="form-control" placeholder="{{ .form.name }}" required>
+              </div>
+              <div class="form-group">
+                <input type="email" name="email" class="form-control" placeholder="{{ .form.email }}" required>
+              </div>
+              <div class="form-group">
+                <input type="text" name="subject" class="form-control" placeholder="{{ .form.subject }}" required>
+              </div>
+          </div>
         </div>
-      </div>
-      <div class="col-md-6 col-sm-12">
-        <div class="block">
-          <form>
+        <div class="col-md-6 col-sm-12">
+          <div class="block">
             <div class="form-group-2">
-              <textarea class="form-control" rows="3" placeholder="{{ .form.message }}"></textarea>
+              <textarea class="form-control" name="message" rows="3" placeholder="{{ .form.message }}" required></textarea>
             </div>
             <button class="btn btn-default" type="submit">{{ .form.button }}</button>
-          </form>
+          </div>
         </div>
-      </div>
+      </form>
     </div>
     <div id="contact-box" class="row">
       <div class="col-md-6 col-sm-12">
@@ -73,3 +71,58 @@
   </div>
 </section>
 {{ end }}
+
+<script type="text/javascript">
+window.addEventListener("load", function(){  
+  $("#contact").submit(function(event){
+  	event.preventDefault(); //prevent default action 
+  	var proceed = true;
+  	var form = this;
+  	
+  	//simple validation at client's end
+  	//loop through each field and we simply change border color to red for invalid fields		
+  	$(form).find(':required').each(function(){
+  		if(!$.trim($(this).val())){ //if this field is empty 
+  			proceed = false; //set do not proceed flag
+  		}
+  		//check invalid email
+  		var email_reg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/; 
+  		if($(this).attr("type")=="email" && !email_reg.test($.trim($(this).val()))){
+  			proceed = false; //set do not proceed flag				
+  		}
+  	});	
+  	
+  	if(proceed){ //everything looks good! proceed...
+  		//get input field values data to be sent to server
+    	var data = {}; //Encode form elements for submission
+      $(this).serializeArray().map(function(x) { data[x.name] = x.value });
+      //$(form).addClass('animated bounceOutUp');
+      $(form).slideUp('slow', function(){ $(form).remove(); });
+  		
+  		//Ajax post data to server
+  		$.ajax({
+  			url : '/send.php',
+  			type: 'POST',
+  			dataType : 'json',
+  			data : data
+  		})
+      
+  		.success(function(response) { 
+        $.notify({ message: '{{ $.Page.Site.Params.contact.feedback }}' }, {
+          type: 'success',
+          placement: { align: "center" },
+          offset: { y: 100 }
+        });
+  		})
+      
+      .fail(function(response) {
+        $.notify({ message: '{{ $.Page.Site.Params.contact.error }}' }, {
+          type: 'danger',
+          placement: { align: "center" },
+          offset: { y: 100 }
+        });
+      });
+  	}
+  });
+});
+</script>

@@ -47,19 +47,6 @@ window.addEventListener("load", function(){
       "link": "Datenschutzrichtlinien",
       "href": "{{ .Site.BaseURL }}datenschutz"
     }
-  })});
-  
-  if (window.location.hash === '#/message-sent') {
-    $.notify({
-    	message: '{{ $.Page.Site.Params.contact.feedback }}'
-    },{
-    	type: 'success',
-      placement: {
-        align: "center"
-      },
-      offset: {
-        y: 100
-      }
-    });
-  }
+  })
+});
 </script>
