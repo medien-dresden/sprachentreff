@@ -90,7 +90,7 @@ params:
       button: senden
     feedback: Ihre Nachricht wurde versandt
     error: Leider konnte Ihre Nachricht nicht versandt werden. Bitte kontaktieren
-      Sie uns via E-Mail oder Telefon
+      Sie uns via E-Mail oder Telefon.
     box:
       title: Kontaktieren Sie uns ...
     gmaps:
