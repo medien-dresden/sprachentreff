@@ -22,7 +22,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav navbar-right">
               {{ range .Site.Menus.header }}
-                <li><a href="{{ .URL }}/" title="{{ .Title }}">{{ .Name }}</a></li>
+                <li><a href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a></li>
               {{ end }}
                 <hr class="visible-xs" />
                 {{ with $.Page.Site.Params.phone }}<li><a href="tel:{{ . }}"><i class="fa fa-lg fa-phone"></i>{{ . }}</a></li>{{ end }}
