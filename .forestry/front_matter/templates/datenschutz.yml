@@ -28,6 +28,6 @@ fields:
   hidden: false
   default: ''
 pages:
+- content/datenschutz.md
 - content/förderung.md
 - content/impressum.md
-- content/datenschutz.md

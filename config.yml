@@ -47,7 +47,7 @@ params:
   slider:
     enable: true
     title: Dresdner<br>Sprachentreff
-    subtitle: Sprachkurse vom Anfänger zum Profi</br>Mit maximal 7 Teilnehmern pro
+    subtitle: Sprachkurse vom Anfänger zum Profi<br>mit maximal 7 Teilnehmern pro
       Kurs
   wrapper:
     enable: true
