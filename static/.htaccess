@@ -1,13 +1,7 @@
 ErrorDocument 404 /404.html
 
-<ifModule mod_rewrite.c>
-    RewriteEngine On
-    RewriteCond %{HTTPS} off
-    RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
-</IfModule>
-
 <IfModule mod_headers.c>
-    Header set Connection keep-alive
+Header set Connection keep-alive
 
     # Cache-control headers
     # 2 HOURS
