@@ -29,7 +29,7 @@ function validateRecaptcha($token) {
 
 if ($_POST) {
   $to_email = "{{< email >}}";
-  $from_email = 'noreply@sprachentreff.de';
+  $from_email = 'info@sprachentreff.de';
 
   if (!isset($_SERVER['HTTP_X_REQUESTED_WITH'])
     || strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) != 'xmlhttprequest'
