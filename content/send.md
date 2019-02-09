@@ -52,9 +52,9 @@ if ($_POST) {
     'X-Mailer: PHP/' . phpversion();
   
   if (validateRecaptcha($token) && mail($to_email, $subject, $message_body, $headers)) {
-    http_response_code(204);
+    header(trim("HTTP/1.0 204 No Content"));
   } else {
-    http_response_code(500);
+    header(trim("HTTP/1.0 500 Internal Server Error"));
   }
 
   exit();
