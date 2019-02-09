@@ -1,6 +1,6 @@
 ---
 title: Dresdner Sprachentreff e.V.
-baseURL: https://sprachentreff.medien-dresden.de/
+baseURL: https://sprachentreff.de/
 languageCode: de-DE
 theme: airspace
 disableKinds:
