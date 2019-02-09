@@ -72,8 +72,10 @@
 </section>
 {{ end }}
 
+<script src="https://www.google.com/recaptcha/api.js?render=6LdfTpAUAAAAADrdMj2raTtUoaMKFugzHq5qt-E9"></script>
+
 <script type="text/javascript">
-window.addEventListener("load", function(){  
+window.addEventListener("load", function(){
   $("#contact").submit(function(event){
     event.preventDefault(); //prevent default action 
     var proceed = true;
@@ -91,32 +93,36 @@ window.addEventListener("load", function(){
         proceed = false; //set do not proceed flag        
       }
     });  
-    
-    if(proceed){ //everything looks good! proceed...
-      //get input field values data to be sent to server
-      $(form).slideUp('slow', function(){ $(form).remove(); });
-      
-      $.ajax({
-        url: '/send.php',
-        type: 'post',
-        dataType: 'json',
-        data: $(this).serialize()
-      })
+   
+    if (proceed) { //everything looks good! proceed...
+      grecaptcha.ready(function() {
+          grecaptcha.execute('6LdfTpAUAAAAADrdMj2raTtUoaMKFugzHq5qt-E9').then(function(token) {
+            $(form).append('<input type="hidden" name="token" value="' + token + '">');
+            $(form).slideUp('slow', function(){ $(form).remove(); });
 
-        .done(function(response) { 
-          $.notify({ message: '{{ $.Page.Site.Params.contact.feedback }}' }, {
-            type: 'success',
-            placement: { align: "center" },
-            offset: { y: 100 }
-          });
-        })
+            $.ajax({
+              url: '/send.php',
+              type: 'post',
+              dataType: 'json',
+              data: $(form).serialize()
+            })
 
-        .fail(function(response) {
-          $.notify({ message: '{{ $.Page.Site.Params.contact.error }}' }, {
-            type: 'danger',
-            placement: { align: "center" },
-            offset: { y: 100 }
-          });
+              .done(function(response) { 
+                $.notify({ message: '{{ $.Page.Site.Params.contact.feedback }}' }, {
+                  type: 'success',
+                  placement: { align: "center" },
+                  offset: { y: 100 }
+                });
+              })
+
+              .fail(function(response) {
+                $.notify({ message: '{{ $.Page.Site.Params.contact.error }}' }, {
+                  type: 'danger',
+                  placement: { align: "center" },
+                  offset: { y: 100 }
+                });
+              });
+            });
         });
     }
   });

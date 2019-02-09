@@ -6,6 +6,27 @@ showInSitemap: false
 ---
 <?php
 
+function validateRecaptcha($token) {
+  $secret = '6LdfTpAUAAAAAMwY4xkHGYFgi-STELwQOmWJkxEM';
+
+  if (isset($token) && !empty($token)) {
+    $verifyURL = 'https://www.google.com/recaptcha/api/siteverify?secret=' . urlencode($secret) .  '&response=' . urlencode($token);
+    $verifyResponse = file_get_contents($verifyURL);
+    $responseData = json_decode($verifyResponse);
+
+    if ($responseData) {
+      return $responseData->success;
+    } else {
+      error_log("Invalid response data: " . $responseData);
+      return false;
+    }
+
+  } else {
+    error_log("No token given");
+    return false;
+  }
+}
+
 if ($_POST) {
   $to_email = "{{< email >}}";
   $from_email = 'noreply@medien-dresden.de';
@@ -17,6 +38,7 @@ if ($_POST) {
     die();
   } 
 
+  $token      = $_POST["token"];
   $user_name  = filter_var($_POST["name"], FILTER_SANITIZE_STRING);
   $user_email = filter_var($_POST["email"], FILTER_SANITIZE_EMAIL);
   $subject    = filter_var($_POST["subject"], FILTER_SANITIZE_STRING);
@@ -29,7 +51,7 @@ if ($_POST) {
     'Reply-To: ' . $user_email . "\r\n" .
     'X-Mailer: PHP/' . phpversion();
   
-  if (mail($to_email, $subject, $message_body, $headers)) {
+  if (validateRecaptcha($token) && mail($to_email, $subject, $message_body, $headers)) {
     http_response_code(204);
   } else {
     http_response_code(500);

@@ -79,7 +79,6 @@ Zahlreiche Internetseiten und Server verwenden Cookies. Viele Cookies enthalten 
 
 Durch den Einsatz folgender Cookies kann der Dresdner Sprachentreff e.V. den Nutzern dieser Internetseite nutzerfreundlichere Services bereitstellen, die ohne die Cookie-Setzung nicht möglich wären.
 
-* **cfduid** &middot; Wird von CloudFlare zur Bereitstellung des CDN verwendet.  Siehe dazu [cloudflare.com/cookie-policy](https://www.cloudflare.com/cookie-policy/).
 * **cookieconsent_status** &middot; Speichert die Zustimmung der betroffenen Person zu Cookies.
 
 Mittels eines Cookies können die Informationen und Angebote auf unserer Internetseite im Sinne des Benutzers optimiert werden. Cookies ermöglichen uns, wie bereits erwähnt, die Benutzer unserer Internetseite wiederzuerkennen. Zweck dieser Wiedererkennung ist es, den Nutzern die Verwendung unserer Internetseite zu erleichtern. Der Benutzer einer Internetseite, die Cookies verwendet, muss beispielsweise nicht bei jedem Besuch der Internetseite erneut seine Zugangsdaten eingeben, weil dies von der Internetseite und dem auf dem Computersystem des Benutzers abgelegten Cookie übernommen wird. Ein weiteres Beispiel ist das Cookie eines Warenkorbes im Online-Shop. Der Online-Shop merkt sich die Artikel, die ein Kunde in den virtuellen Warenkorb gelegt hat, über ein Cookie.
@@ -94,13 +93,18 @@ Bei der Nutzung dieser allgemeinen Daten und Informationen zieht die Dresdner Sp
 
 ## 5\. Externe Dienste
 
-### Cloudflare
+### Google reCAPTCHA
 
-Das von Cloudflare Inc. (101 Townsend St, San Francisco, CA 94107, USA) eingesetzte Content Delivery Network (CDN) ist unter dem Privacy-Shield-Abkommen zertifiziert ([privacyshield.gov/participant?id=a2zt0000000GnZKAA0](https://www.privacyshield.gov/participant?id=a2zt0000000GnZKAA0&status=Active)) und garantiert damit die Einhaltung des europäischen Datenschutzrechts.
+Wir verwenden Google reCAPTCHA der Firma Google Inc. (1600 Amphitheatre Parkway Mountain View, CA 94043, USA) um Spam zu verhindern.
 
-Der Dresdner Sprachentreff e.V. setzt das CDN ein um die Inhalte des Onlineangebotes optimiert ausliefern zu können und die Verschlüsselte Übertragung derselben zu gewährleisten. Die Nutzung erfolgt auf Grundlage des berechtigten Interesses des Dresdner Sprachentreff e.V. das Onlineangebot gem. Art. 6 Abs. 1 lit. f. DSGVO sicher und effizient bereitstellen zu können.
+Rechtsgrundlage für die Verwendung ist Artikel 6 (1) f (Rechtmäßigkeit der Verarbeitung), denn es besteht ein berechtigtes Interesse diese Webseite vor Bots und Spam zu schützen.
 
-Betroffene Personen finden weitere Informationen zur Datenschutzerklärung von Cloudflare unter [cloudflare.com/security-policy](https://www.cloudflare.com/security-policy).
+reCAPTCHA ist ein kostenloser Dienst, der Webseiten vor Spam und Missbrauch schützt. Es nutzt fortschrittliche Risikoanalysetechniken, um Menschen und Bots auseinander zu halten. Mit der neuen API wird eine signifikante Anzahl Ihrer gültigen menschlichen Benutzer die reCAPTCHA-Herausforderung bestehen, ohne ein CAPTCHA lösen zu müssen.  Wir nutzen reCAPTCHA für die Absicherung von Formularen.
+
+Durch die Nutzung von reCAPTCHA werden Daten an Google übertragen die Google nutzt um festzustellen ob der Besucher ein Mensch oder ein (Spam)bot ist. Welche Daten von Google erfasst werden und wofür diese Daten verwendet werden, können Sie auf [policies.google.com/privacy](https://policies.google.com/privacy) nachlesen.
+Die Nutzungsbedingungen für Dienste und Produkte von Google können Sie unter [policies.google.com/terms](https://policies.google.com/terms) nachlesen.
+
+Quelle: Erstellt mit dem Datenschutz Generator von firmenwebseiten.at in Kooperation mit bondomum.de
 
 ### Google Maps
 
