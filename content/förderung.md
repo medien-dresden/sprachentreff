@@ -21,7 +21,7 @@ In Dresden kann man sich den Prämiengutschein im Bildungszentrum Dresden (Reick
 Otto-Mohr-Str.10  
 01237 Dresden  
 
-**Telefon** &middot; [0351 270 280](tel:0351 270 280)
+**Telefon** &middot; [0351 270 280](tel:0351270280)
 
 ---
 
