@@ -1,7 +1,6 @@
 ---
 label: data/service.yml
 hide_body: true
-is_partial: false
 fields:
 - name: enable
   label: Enable

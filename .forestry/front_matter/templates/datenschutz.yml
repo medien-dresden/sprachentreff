@@ -1,7 +1,6 @@
 ---
 label: mit Body
 hide_body: false
-is_partial: false
 fields:
 - name: title
   label: Titel
@@ -28,6 +27,6 @@ fields:
   hidden: false
   default: ''
 pages:
+- content/datenschutz.md
 - content/förderung.md
 - content/impressum.md
-- content/datenschutz.md
