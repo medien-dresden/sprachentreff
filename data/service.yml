@@ -3,14 +3,12 @@ enable: true
 title: Unsere Leistungen
 subtitle: Unser kleines Dresdner Team von Sprachlehrern mit Auslandserfahrung und
   Muttersprachlern in allen gängigen Fremdsprachen geht individuell auf die Wünsche
-  unserer Kursteilnehmer und -teilnehmerinnen ein.
+  unserer KursteilnehmerInnen ein.
 content:
 - icon: ionicons ion-ios-timer
   name: kostenlose Probierstunde
-  text: 'Wenn Sie bereits Vorkenntnisse haben, empfehlen wir Ihnen eine kostenlose
-    Probierstunde.
-
-'
+  text: Wenn Sie bereits Vorkenntnisse haben, empfehlen wir Ihnen eine kostenlose
+    Probestunde in einem unserer laufenden Kursebierstunde.
 - icon: ionicons ion-ios-fitness
   name: Intensivkurse
   text: 'Erkundigen Sie sich nach unseren Intensivkurs-Wochen: Werktags von 8.00 bis
